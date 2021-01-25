@@ -1,0 +1,337 @@
+html, body {
+    margin: 0%;
+    padding: 0%;
+    min-height: 100vh;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: scroll;
+}
+
+@font-face{
+    font-family: Montserrat-Light-Local;
+    src:url("fonts\\Montserrat\\Montserrat-Light.otf") format("opentype")
+}
+
+@font-face{
+    font-family: Montserrat-Medium-Local;
+    src:url("fonts\\Montserrat\\Montserrat-Medium.otf") format("opentype")
+}
+
+@font-face{
+    font-family: Montserrat-Thin-Local;
+    src:url("fonts\\Montserrat\\Montserrat-Thin.otf") format("opentype")
+}
+header nav.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(18, 27, 34);
+    position: sticky;
+    background-color: rgb(20, 26, 31);
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.5);
+}
+
+header nav.navbar .logo{
+    height: 80px;
+    width: auto;
+    margin-left: 20px;
+}
+
+header nav.navbar .logo img{
+    height: 100%;
+    object-fit: cover;
+}
+
+header nav.navbar .title{
+    position: relative;
+    padding: 2rem 2rem;
+    font-size: 3rem;
+    line-height: 0px;
+    font-style: italic;
+    font-family: 'Imbue', serif;
+    text-align: center;
+    color: white;
+    border-left: 2px solid rgb(255, 65, 87);
+    border-right: 2px solid rgb(255, 65, 87);
+    border-top: 2px solid rgb(255, 65, 87);
+    border-bottom: 2px solid rgb(255, 65, 87);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+header nav.navbar .links {
+    display: flex;
+    justify-content: end;
+}
+
+header nav.navbar .links a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding: 5px 2rem;
+
+}
+
+header nav.navbar .links a:hover{
+    color: rgb(255, 65, 87);
+
+}
+
+header nav.navbar .links .link{
+    padding: 1.5rem 0;
+    position: relative;
+    border-left: 1px solid rgb(255, 65, 87);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+ 
+header nav.navbar .links .link .dropdown{
+    position: absolute;
+    z-index: 10;
+    background-color:rgb(20, 26, 31);  
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+}
+
+header nav.navbar .links .link .dropdown .dropdown-item{
+    padding: 2rem 2rem;
+    margin-top: 1rem 0;
+    white-space:nowrap ;
+    
+}
+header nav.navbar .links .link:hover .dropdown{
+    display: block;
+}
+ 
+main .boite-info{
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 2px;
+    height: 50px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-color: rgb(255, 65, 87);      
+    border-radius: 15px;   
+}
+
+main .boite-info .info {
+    color: rgb(255, 65, 87);
+}
+
+main .large-image{
+    margin : auto;
+    background:white;
+    width:95%;
+    height:500px;
+    border-style: solid;
+    background-image: url("img/blends/1.png");
+    border-color: rgb(18, 27, 34);
+    border-width: 3px;   
+    line-height: 500px;
+    margin-block-end: 30px;
+    transition:3s;
+    margin-top: -10px;
+}
+
+main .large-image .browse-button{
+    transition: 0.2s;
+    transform:scale(1);
+    color: white;
+    margin-left: 48%;
+    text-align: center;
+    background-color: rgb(18, 27, 34);
+    border-color: rgb(18, 27, 34);
+    border-radius: 10px;
+    border-style:solid;
+    height: 50px;
+    
+}
+
+main .large-image .browse-button:hover{
+    transition: 0.2s;
+    transform:scale(1.2);
+}
+
+main .large-image .browse-button:active{
+    background-color:rgb(255, 65, 87);
+    border-color:rgb(255, 65, 87);
+}
+
+main .Box{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+
+main .Box .boite-gauche {
+    height: 500px;
+    width: 50%;
+    position: relative;
+    padding-right: 30px;
+}
+
+main .Box .boite-gauche .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .Box .boite-gauche .centered button{
+    transition: 0.2s;
+    height: 40px;
+    background-color: rgb(18, 27, 34);
+    border-color:rgb(18, 27, 34) ;
+    color: white;
+    border-radius: 10px;
+}
+
+main .Box .boite-gauche img {
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(18, 27, 34) ;
+}
+
+main .Box .boite-gauche .centered button:hover{
+    transform:scale(1.2);
+}
+
+main .Box .boite-gauche .centered button:active{
+    background-color: rgb(255, 65, 87);
+    border-color: rgb(255, 65, 87);
+}
+
+main .Box .boite-droite {
+    height: 500px;
+    width: 50%;
+    position: relative;
+    padding-left: 30px;
+}
+
+main .Box .boite-droite .centered2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .Box .boite-droite .centered2 button{
+    transition: 0.2s;
+    height: 40px;
+    background-color: rgb(18, 27, 34);
+    border-color:rgb(18, 27, 34) ;
+    color: white;
+    border-radius: 10px;
+}
+
+main .Box .boite-droite img {
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(18, 27, 34) ;
+}
+
+main .Box .boite-droite .centered2 button:hover{
+    transform:scale(1.2);
+}
+
+main .Box .boite-droite .centered2 button:active{
+    background-color: rgb(255, 65, 87);
+    border-color: rgb(255, 65, 87);
+}
+
+main .sec{
+    margin-left: 50px;
+    margin-top: -10px;
+}
+
+main .main-2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95.2%;
+    height: 300px;
+    background-color: rgb(18, 27, 34);
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+}
+
+
+main .main-2 .icone{
+    margin-top: 30px;
+    margin-left: 40px;
+    position: relative;
+    width: 300px;
+
+}
+
+main .main-2 .blue{
+    position: relative;
+    width: calc(100% - 300px);
+}
+
+main .main-2 .blue .yellow {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50% , -50%);
+    width: 80%;
+}
+
+main .main-2 h1 {
+    color: white;
+}
+
+main .main-2 p{
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+footer{
+    background-color: rgb(20, 26, 31);
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    margin-top: 30px;
+}
+
+footer .button-footer{
+    transition: 0.2s;
+    transform:scale(1);
+    width: 50px;
+    height: 50px;
+    float: right;
+    background-color: rgb(255, 65, 87);
+    border-color: rgb(255, 65, 87);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color:rgb(18, 27, 34) ;
+    margin-top: 25px;
+    margin-right: 30px;
+}
+
+footer .button-footer:hover {
+    transition: 0.2s;
+    transform:scale(1.2);
+}
+
+footer .bas-contact {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    padding: 1rem 1rem;
+    border-left: 2px solid rgb(255, 65, 87) ;
+}
+
+footer .bas-contact:hover {
+    color:rgb(255, 65, 87)  ;
+}
